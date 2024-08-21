@@ -68,11 +68,11 @@ const Login = () => {
                 <div className="hero mt-16 lg:w-1/2 ">
                     <div className="hero-content  flex-col md:w-full lg:w-[800px] h-[600px] mb-2 lg:mb-44">
                         
-                        <div className="card shrink-0 pt-10 shadow-2xl  bg-[#EDFAF6] w-3/4">
+                        <div className="card shrink-0 pt-10 shadow-2xl bg-[#FFFAF9] w-3/4">
                         <div className="text-center ">
-                            <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-5">Login now!</h1>
+                            <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-5 text-[#6D412A]">Login now!</h1>
                         </div>
-                            <form onSubmit={handleSubmit(onSubmit)} className="card-body rounded-xl p-6  bg-[#EDFAF6]">
+                            <form onSubmit={handleSubmit(onSubmit)} className="card-body rounded-xl p-6  bg-[#FFFAF9]">
                                 {/* EMAIL */}
                                 <div className="form-control mb-3">
                                 <label className="label">
@@ -99,22 +99,22 @@ const Login = () => {
                                     </label>
                                 </div>
                                 <div className="form-control mt-6">
-                                    <button className="btn bg-[#b6f8e4] text-black button-styles hover:bg-[#98fbdd] text-base md:text-lg ">Login</button>
+                                    <button className="btn button-styles border-[#AD795B] bg-[#EFC7AF] hover:bg-[#AD795B] text-[#6D412A] hover:text-white lg:text-lg font-medium ">Login</button>
                                 </div>
                             </form>
-                           <div className='flex flex-col md:flex-row lg:flex-row lg:gap-4 mx-auto bg-[#EDFAF6]'>
-                                <div className='mx-8 lg:mb-8 mb-4 justify-center  bg-[#EDFAF6]'>
-                                    <p className='text-center mb-2 text-base md:text-lg font-semibold text-[#2e9c7b]'>Or Login With:</p>
-                                    <button onClick={handleGoogleLogin} className="btn text-lg  bg-[#EDFAF6] hover:bg-[#98fbdd] ">
+                           <div className='flex flex-col md:flex-row lg:flex-row lg:gap-4 mx-auto bg-[#FFFAF9]'>
+                                <div className='mx-8 lg:mb-8 mb-4 justify-center  bg-[#FFFAF9]'>
+                                    <p className='text-center mb-2 text-base md:text-lg font-semibold text-[#6D412A]'>Or Login With:</p>
+                                    <button onClick={handleGoogleLogin} className="btn  border-[#AD795B] bg-[#EFC7AF] hover:bg-[#AD795B] text-[#6D412A] hover:text-white lg:text-lg font-medium ">
                                         <FcGoogle className='text-lg md:text-2xl'></FcGoogle>
                                         Google
                                     </button>
                                 </div>
                            </div>
                             <div className='mx-8 mb-8 flex justify-center text-center'>
-                                <p>Don&apos;t have an account? <Link className="text-[#2e9c7b] underline font-semibold" to={'/register'}>Register Now</Link></p>
+                                <p>Don&apos;t have an account? <Link className="text-[#AD795B] underline font-semibold" to={'/register'}>Register Now</Link></p>
                             </div>
-                            <Link to="/" className='flex gap-2 z-10 text-[#2e9c7b] items-center justify-end pb-3 pr-4'>
+                            <Link to="/" className='flex gap-2 z-10 text-[#AD795B] items-center justify-end pb-3 pr-4'>
                                 <p>Back to Home </p>
                                 <IoArrowRedoSharp />
                             </Link>
