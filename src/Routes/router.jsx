@@ -5,6 +5,7 @@ import {
 import Main from "../Layout/Main";
 import Home from "../pages/Home/Home";
 import ProductsPagination from "../pages/Home/ProductsPagination";
+import Login from "../pages/Login/Login";
 
 export const router = createBrowserRouter([
     {
@@ -18,10 +19,14 @@ export const router = createBrowserRouter([
             // loader: () => fetch("http://localhost:5000/perfumes")
         },
         {
+          path: "/login",
+          element: <Login></Login>
+        },
+        {
             path: "/all-products",
             element: <ProductsPagination></ProductsPagination>,
             loader: () => fetch("http://localhost:5000/all-products-count")
-          },
+        },
       ]
     },
   ]);

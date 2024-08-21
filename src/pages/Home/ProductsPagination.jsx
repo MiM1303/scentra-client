@@ -107,16 +107,16 @@ const ProductsPagination = () => {
 
             {/* PAGINATION */}
             <div className="px-2 md:px-10 py-6 pagination text-center ">
-                <button onClick={handlePrevPage} className="join-item btn btn-outline mr-8 align-middle"><IoIosArrowBack /></button>
+                <button onClick={handlePrevPage} className="p-2 lg:p-4 border rounded-xl border-1 border-[#AD795B] join-item btn btn-outline mr-8 align-middle"><IoIosArrowBack /></button>
                 {
                     pages.map(page=> <button
                                         onClick={()=>setCurrentPage(page)} 
-                                        className={`align-middle btn btn-outline hover:bg-[#EDFAF6] hover:text-black mr-4 ${currentPage === page? 'bg-[#98FBDD] text-black': ''}`} 
+                                        className={`p-2 lg:p-4 border rounded-xl border-1 border-[#AD795B] align-middle hover:bg-[#EDFAF6] hover:text-black mr-4 ${currentPage === page? 'bg-[#98FBDD] text-black': ''}`} 
                                         key={page}>
                                             {page}
                                     </button>)
                 }
-                <button onClick={handleNextPage} className="ml-4 join-item btn btn-outline align-middle"><IoIosArrowForward /></button>
+                <button onClick={handleNextPage} className="p-2 lg:p-4 border rounded-xl border-1 border-[#AD795B] ml-4 join-item btn btn-outline align-middle"><IoIosArrowForward /></button>
             </div>
         </div>
     );
