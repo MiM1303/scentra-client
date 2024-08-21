@@ -1,3 +1,4 @@
+import ProductsPagination from "./ProductsPagination";
 
 
 const Home = () => {
@@ -8,7 +9,7 @@ const Home = () => {
     return (
         <div>
             <h2 className="text-center font-bold text-2xl">Homepage</h2>
-
+            <ProductsPagination></ProductsPagination>
              
             
         </div>

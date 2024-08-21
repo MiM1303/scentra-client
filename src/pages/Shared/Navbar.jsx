@@ -11,7 +11,7 @@ const Navbar = () => {
 
     const navOptions = <>
         <li><Link to="/" className="text-base lg:text-lg font-semibold text-[#6D412A]">Home</Link ></li>
-        <li><Link to="all-products" className="text-base lg:text-lg font-semibold text-[#6D412A]">Products</Link ></li>
+        <li><Link to="perfumes" className="text-base lg:text-lg font-semibold text-[#6D412A]">Products</Link ></li>
     </>
 
     return (

@@ -7,6 +7,7 @@ import Home from "../pages/Home/Home";
 import ProductsPagination from "../pages/Home/ProductsPagination";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
+import AllProducts from "../pages/AllProducts/AllProducts";
 
 export const router = createBrowserRouter([
     {
@@ -17,7 +18,7 @@ export const router = createBrowserRouter([
         {
             path: "/",
             element: <Home></Home>,
-            // loader: () => fetch("http://localhost:5000/perfumes")
+            loader: () => fetch("http://localhost:5000/all-products-count")
         },
         {
           path: "/login",
@@ -32,6 +33,16 @@ export const router = createBrowserRouter([
             element: <ProductsPagination></ProductsPagination>,
             loader: () => fetch("http://localhost:5000/all-products-count")
         },
+        {
+          path: "/perfumes",
+          element: <AllProducts></AllProducts>,
+          loader: () => fetch("http://localhost:5000/perfumes")
+      },
+      {
+        path: `/perfumes/search/:searchText`,
+        element: <AllProducts></AllProducts>,
+        loader: ({params}) => fetch(`https://meraki-server.vercel.app/available-foods/search/${params.searchText}`)
+    },
       ]
     },
   ]);

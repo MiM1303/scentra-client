@@ -1,8 +1,8 @@
-# React + Vite
+Website Name: Scentra
+Website Live Link: 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features of website-
+* Users can view products through a pagination
+* Users can register and login using email and google account
+* Users are able to search and sort products
+* Products are categorized in different categories

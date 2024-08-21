@@ -17,6 +17,16 @@ const ProductsPagination = () => {
     
     const [searchLoad, setSearchLoad] = useState(0);
 
+    const itemsPerPage = 6;
+    let numberOfPages = Math.ceil(count / itemsPerPage);
+    
+    console.log(count, numberOfPages);
+
+    let pages = [...Array(numberOfPages).keys()];
+    
+    console.log(pages);
+    
+
     // LOADING DATA
     useEffect(()=>{
         fetch(`http://localhost:5000/all-products?page=${currentPage}&size=${itemsPerPage}&search=${searchText}`)
@@ -37,18 +47,22 @@ const ProductsPagination = () => {
             setCount(data.count);
             setLoading(false);
             // console.log(count);
+
+            
+            numberOfPages = Math.ceil(count / itemsPerPage);
+            pages = [...Array(numberOfPages).keys()];
         })
-    }, [searchLoad])
+    }, [searchLoad, searchText])
 
 
     // PAGINATION MATHS
 
-    const itemsPerPage = 6;
-    const numberOfPages = Math.ceil(count / itemsPerPage);
-    console.log(count, numberOfPages);
+    // const itemsPerPage = 6;
+    // const numberOfPages = Math.ceil(count / itemsPerPage);
+    // console.log(count, numberOfPages);
 
-    const pages = [...Array(numberOfPages).keys()];
-    console.log(pages);
+    // const pages = [...Array(numberOfPages).keys()];
+    // console.log(pages);
     
     const handlePrevPage = () =>{
         if(currentPage>0){

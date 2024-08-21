@@ -8,10 +8,10 @@ const ProductCard = ({product}) => {
     const location = useLocation();
 
     return (
-        <div className="card lg:card-side bg-[#fffaf9] shadow-xl">
+        <div className="card card-compact bg-[#fffaf9] shadow-xl">
             <figure>
                 <img
-                className="w-3/4 lg:w-full"
+                className="w-full"
                 src={product_image}
                 alt="Album" />
             </figure>

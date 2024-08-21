@@ -68,7 +68,7 @@ const Login = () => {
                 <div className="hero mt-16 lg:w-1/2 ">
                     <div className="hero-content  flex-col md:w-full lg:w-[800px] h-[600px] mb-2 lg:mb-44">
                         
-                        <div className="card shrink-0 pt-10 shadow-2xl bg-[#FFFAF9] w-3/4">
+                        <div className="card shrink-0 pt-10 shadow-2xl bg-[#FFFAF9] w-full lg:w-3/4">
                         <div className="text-center ">
                             <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-5 text-[#6D412A]">Login now!</h1>
                         </div>
